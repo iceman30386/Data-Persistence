@@ -4,9 +4,9 @@ using System.IO;
 public class DataManager : MonoBehaviour
 {
     public static DataManager instance;
-    public string sPlayerH;
-    public string sPlayerC;
-    public int iHighScore;
+    public string sPlayerH = null;
+    public string sPlayerC = null;
+    public int iHighScore = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

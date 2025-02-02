@@ -429,7 +429,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 308384296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 621486210}
+        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &308384296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e48be20f332194da0f070e0d4a96a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sPlayerH: 
+  iHighScore: 0
 --- !u!4 &487784502
 Transform:
   m_ObjectHideFlags: 0
@@ -576,6 +590,7 @@ GameObject:
   - component: {fileID: 621486208}
   - component: {fileID: 621486207}
   - component: {fileID: 621486206}
+  - component: {fileID: 621486210}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -671,6 +686,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &621486210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621486205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8743870d7fd5b9409657900f81194fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmpHighScore: {fileID: 1462430639}
 --- !u!1 &654809293
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,7 +781,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 654809296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 621486210}
+        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
+        m_MethodName: StartNew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &654809296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1136,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 621486210}
+        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
+        m_MethodName: PlayerNameUpdate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
